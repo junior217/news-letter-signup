@@ -1,5 +1,13 @@
 import Link from "next/link"
+import { Signupimages, signups, emaillist} from "../data"
+import Success from "./SuccessPage"
+import Image from "next/image"
+
 
 export default function SuccessPage(){
-    return <h1 className="text-4xl p-2 bg-blue-400">Success</h1>
+    return (
+        <>
+            <Success images={signups} emails={emaillist}/>
+        </>
+    )
 }
