@@ -1,8 +1,9 @@
-import Link from "next/link"
+
 import { Signupimages, signups, emaillist} from "../data"
 import Success from "./SuccessPage"
-import Image from "next/image"
 
+
+export const dynamic = 'force-dynamic';
 
 export default function SuccessPage(){
     return (

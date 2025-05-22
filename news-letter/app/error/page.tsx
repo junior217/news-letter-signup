@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default function EmailErrorPage() {
   return (
     <div className="min-h-screen bg-[#2B2D42] text-white flex flex-col items-center justify-center px-4 text-center">

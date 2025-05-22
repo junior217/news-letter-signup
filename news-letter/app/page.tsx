@@ -1,10 +1,10 @@
 'use client';
-import Image from "next/image";
+
 import SignUpPage from "./SignUp";
 import { signups, iconlist } from "./data";
 import { useState, useEffect  } from "react"
-import { tree } from "next/dist/build/templates/app-page";
 
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
