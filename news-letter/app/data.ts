@@ -33,4 +33,4 @@ export const iconlist: IconList[] = [
 export const emaillist: EmailList[] = [{
   id: "1",
   email: 'example@gmail.com'
-}]
+},{id: "2", email: "johno@gmail.com"}]

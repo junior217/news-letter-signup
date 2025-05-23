@@ -1,22 +1,24 @@
 'use client'
 
 import Image from "next/image"
-import { Signupimages, IconList } from "./data"
+import { Signupimages, IconList, EmailList} from "./data"
 import { useRouter } from "next/navigation"
-import { useState  } from "react"
-
+import { useEffect, useState  } from "react"
+import { stringify } from "querystring"
 
 
 
 export default function SignUpPage({
   signupImages,
-  iconList = [],
+  iconList, emailList = [],
 }: {
   signupImages: Signupimages[]
   iconList: IconList[]
+  emailList: EmailList[] 
 }) {
   
-  
+
+
   const [email, setEmail] = useState('')
   const router = useRouter();
 
@@ -27,14 +29,31 @@ export default function SignUpPage({
       console.log(typeof email)
       router.push('/success')
     }
-
+  
 
     if(email === ''){
       router.push('/error')
     }
   }
   
+  const addToMail = () => {
+     
+      emailList.forEach((mail, i) => {
+      
+      if(emailList !== undefined){
+        
+        const newMailId = parseInt(mail.id) + 1;
+        console.log(typeof newMailId);
+        
+
+      }
+      
+    });
+  }
+
+ addToMail()
   return (
+     
     <div className="bg-[#2B2D42] min-h-screen flex items-center justify-center p-4">
       <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row w-full max-w-5xl overflow-hidden">
         {/* Left Content */}
