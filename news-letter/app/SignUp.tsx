@@ -36,22 +36,22 @@ export default function SignUpPage({
     }
   }
   
-  const addToMail = () => {
+//   const addToMail = () => {
      
-      emailList.forEach((mail, i) => {
+//       emailList.forEach((mail, i) => {
       
-      if(emailList !== undefined){
+//       if(emailList !== undefined){
         
-        const newMailId = parseInt(mail.id) + 1;
-        console.log(typeof newMailId);
+//         const newMailId = parseInt(mail.id) + 1;
+//         console.log(typeof newMailId);
         
 
-      }
+//       }
       
-    });
-  }
+//     });
+//   }
 
- addToMail()
+//  addToMail()
   return (
      
     <div className="bg-[#2B2D42] min-h-screen flex items-center justify-center p-4">
